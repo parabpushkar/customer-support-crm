@@ -1,7 +1,5 @@
-asgiref==3.8.1
-Django==5.2.2
-fpdf==1.7.2
-pillow==11.2.1
-python-dotenv==1.2.1
-sqlparse==0.5.3
-tzdata==2025.2
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+email-validator
