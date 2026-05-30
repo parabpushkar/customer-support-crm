@@ -14,7 +14,7 @@ description: "",
 });
 
 const fetchTickets = async () => {
-const url = `http://127.0.0.1:8000/api/tickets?search=${search}&status=${statusFilter}`;
+const url = `https://customer-support-crm-js3m.onrender.com/api/tickets?search=${search}&status=${statusFilter}`;
 
 
 const response = await fetch(url);
@@ -34,7 +34,7 @@ e.preventDefault();
 
 
 const response = await fetch(
-  "http://127.0.0.1:8000/api/tickets",
+  "https://customer-support-crm-js3m.onrender.com/api/tickets",
   {
     method: "POST",
     headers: {
@@ -238,7 +238,7 @@ return ( <div className="min-h-screen bg-slate-100 py-8"> <div className="max-w-
                 value={ticket.status}
                 onChange={async (e) => {
                   await fetch(
-                    `http://127.0.0.1:8000/api/tickets/${ticket.ticket_id}?status=${e.target.value}`,
+                    `https://customer-support-crm-js3m.onrender.com/api/tickets/${ticket.ticket_id}?status=${e.target.value}`,
                     {
                       method: "PUT",
                     }
